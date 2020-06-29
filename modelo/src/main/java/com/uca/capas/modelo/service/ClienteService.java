@@ -42,5 +42,12 @@ public interface ClienteService {
 
 	public List<ClienteDTO> getClienteMarca(String marca);
 	/************************************************************************* */
+	
+	public int insertClientAutoId(Cliente c);
+	
+	public void updateCliente(Cliente c);
 
+	public int ejecutarProJdbc(Integer cliente, Boolean estado);
+
+	public int[][] cargaMasiva() throws ParseException;
 }
